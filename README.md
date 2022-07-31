@@ -7,13 +7,13 @@ Formify is an open source application that lets you create, manage and embed con
 #### With yarn
 
 ```sh
-yarn add @formify/form
+yarn add formify-form
 ```
 
 #### With NPM
 
 ```sh
-npm install @formify/form
+npm install formify-form
 ```
 
 ## Getting Started
@@ -23,7 +23,7 @@ First visit [formify.vercel.app](https://formify.vercel.app) and get the formURL
 Or if you have an end point that accepts forms then you can make use of it.
 
 ```jsx
-import { Form } from '@formify/form';
+import { Form } from ' formify-form';
 
 const App = () => {
   return (
