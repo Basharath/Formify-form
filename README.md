@@ -23,7 +23,7 @@ First visit [formify.vercel.app](https://formify.vercel.app) and get the formURL
 Or if you have an end point that accepts forms then you can make use of it.
 
 ```jsx
-import { Form } from ' formify-form';
+import { Form } from 'formify-form';
 
 const App = () => {
   return (
