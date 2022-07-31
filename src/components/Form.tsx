@@ -1,7 +1,5 @@
 import React, { ChangeEvent, useState } from 'react';
-import { styled, setup } from 'goober';
-
-setup(React.createElement);
+import styled from 'styled-components';
 
 const Main = styled('div')``;
 
@@ -9,8 +7,7 @@ interface FormProps {
   open: boolean;
 }
 
-const Form = styled<FormProps>('div')(
-  (props) => `
+const Form = styled.div<FormProps>`
   position: fixed;
   bottom: 65px;
   /* left: 20px;  */
@@ -26,9 +23,9 @@ const Form = styled<FormProps>('div')(
   margin-bottom: 10px;
   width: 300px;
   /* transform: translateX(-400px); */
-  transform: ${props.open ? 'translateX(0)' : 'translateX(400px)'};
-  transition: transform 0.7s ease;`
-);
+  transform: ${(props) => (props.open ? 'translateX(0)' : 'translateX(400px)')};
+  transition: transform 0.7s ease;
+`;
 
 const FormToggler = styled('div')`
   position: fixed;
@@ -107,14 +104,12 @@ interface AlertProps {
   type: string;
 }
 
-const FormAlert = styled<AlertProps>('div')(
-  ({ type }) => `
+const FormAlert = styled.div<AlertProps>`
   text-align: center;
   font-size: 16px;
   padding-bottom: 10px;
-  color: ${type === 'success' ? '#22d3ee' : '#e8e840'};
-`
-);
+  color: ${({ type }) => (type === 'success' ? '#22d3ee' : '#e8e840')};
+`;
 
 interface FormFieldTypes {
   name?: string;

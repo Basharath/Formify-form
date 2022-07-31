@@ -18,19 +18,27 @@
     "dist",
     "src"
   ],
+  "engines": {
+    "node": ">=10"
+  },
+  "private": false,
   "author": "Basharath",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.25",
     "tsup": "^6.2.1",
     "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "goober": "^2.1.10"
   },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.5"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
