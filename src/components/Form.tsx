@@ -22,7 +22,7 @@ const Form = styled.div<FormProps>`
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
   width: 300px;
-  /* transform: translateX(-400px); */
+  transform: translateX(400px);
   transform: ${(props) => (props.open ? 'translateX(0)' : 'translateX(400px)')};
   transition: transform 0.7s ease;
 `;
